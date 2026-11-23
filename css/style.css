@@ -172,3 +172,19 @@ th {
 ol li {
   margin-bottom: 6px;
 }
+
+.campo {
+  margin-bottom: 16px;
+}
+
+.campo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.duas-colunas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 16px;
+}

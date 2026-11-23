@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicar plantão - Escala</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="conteudo">
+      <a href="index.html" class="logo">escala</a>
+      <nav>
+        <a href="index.html">Plantões</a>
+        <a href="publicar.html">Publicar</a>
+        <a href="meus-plantoes.html">Meus plantões</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <h1>Publicar plantão</h1>
+
+    <form class="caixa" action="meus-plantoes.html#publicado">
+      <h2>Hospital e data</h2>
+      <div class="duas-colunas">
+        <div class="campo">
+          <label for="hospital">Hospital</label>
+          <select id="hospital" name="hospital" required>
+            <option value="">Selecione</option>
+            <option>Hospital Santa Clara</option>
+            <option>Hospital São Lucas</option>
+            <option>Pronto-Socorro Central</option>
+            <option>Hospital Infantil Sabará</option>
+            <option>Hospital Regional Oeste</option>
+            <option>Maternidade Bela Vista</option>
+            <option>Hospital Municipal do Tatuapé</option>
+            <option>Hospital das Clínicas</option>
+            <option>UPA Santana</option>
+            <option>Hospital Estadual de Diadema</option>
+            <option>Hospital São Bernardo</option>
+            <option>Pronto-Socorro Lapa</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="data">Data</label>
+          <input type="date" id="data" name="data" required>
+        </div>
+      </div>
+
+      <h2>Horário e valor</h2>
+      <div class="duas-colunas">
+        <div class="campo">
+          <label for="turno">Turno</label>
+          <select id="turno" name="turno">
+            <option>Diurno</option>
+            <option>Noturno</option>
+            <option>24h</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="valor">Valor (R$)</label>
+          <input type="number" id="valor" name="valor" min="0" required>
+        </div>
+        <div class="campo">
+          <label for="inicio">Início</label>
+          <input type="time" id="inicio" name="inicio" value="07:00">
+        </div>
+        <div class="campo">
+          <label for="fim">Fim</label>
+          <input type="time" id="fim" name="fim" value="19:00">
+        </div>
+        <div class="campo">
+          <label for="especialidade">Especialidade</label>
+          <select id="especialidade" name="especialidade">
+            <option>Clínica Médica</option>
+            <option>Pediatria</option>
+            <option>Ortopedia</option>
+            <option>Anestesiologia</option>
+            <option>Ginecologia</option>
+            <option>Cardiologia</option>
+            <option>Emergência</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="setor">Setor</label>
+          <input type="text" id="setor" name="setor" placeholder="Ex.: Pronto-atendimento" required>
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="descricao">Descrição do setor (opcional)</label>
+        <textarea id="descricao" name="descricao" rows="3"></textarea>
+      </div>
+
+      <div class="campo">
+        <label for="instrucoes">Como fazer a troca (um passo por linha)</label>
+        <textarea id="instrucoes" name="instrucoes" rows="4"></textarea>
+      </div>
+
+      <button type="submit">Publicar plantão</button>
+    </form>
+  </main>
+
+  <footer>Escala · protótipo DSW2 · Daniel Gidrão e Lucas Martinez</footer>
+</body>
+</html>
