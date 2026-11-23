@@ -209,3 +209,19 @@ ol li {
 .aviso:target {
   display: block;
 }
+
+@media (min-width: 600px) {
+  .lista {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .duas-colunas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .lista {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
