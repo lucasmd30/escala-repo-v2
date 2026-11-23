@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escala - troca de plantões</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="conteudo">
+      <a href="index.html" class="logo">escala</a>
+      <nav>
+        <a href="index.html">Plantões</a>
+        <a href="publicar.html">Publicar</a>
+        <a href="meus-plantoes.html">Meus plantões</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <h1>Plantões disponíveis</h1>
+
+    <form class="caixa busca" action="index.html">
+      <input type="search" name="q" placeholder="Hospital, bairro ou setor">
+      <select name="especialidade">
+        <option value="">Todas as especialidades</option>
+        <option>Clínica Médica</option>
+        <option>Pediatria</option>
+        <option>Ortopedia</option>
+        <option>Anestesiologia</option>
+        <option>Ginecologia</option>
+        <option>Cardiologia</option>
+        <option>Emergência</option>
+      </select>
+      <select name="turno">
+        <option value="">Qualquer turno</option>
+        <option>Diurno</option>
+        <option>Noturno</option>
+        <option>24h</option>
+      </select>
+      <select name="distancia">
+        <option value="">Qualquer distância</option>
+        <option value="5">Até 5 km</option>
+        <option value="10">Até 10 km</option>
+        <option value="20">Até 20 km</option>
+        <option value="50">Até 50 km</option>
+      </select>
+      <button type="submit">Buscar</button>
+    </form>
+
+    <p>8 plantões encontrados</p>
+
+    <div class="lista">
+      <div class="plantao">
+        <p><span class="etiqueta">Diurno</span> <span class="etiqueta urgente">Urgente</span></p>
+        <h3>Hospital Santa Clara</h3>
+        <p class="data">Sáb, 03/10 · 07:00 às 19:00 (12h)</p>
+        <p>Clínica Médica · Pronto-atendimento adulto</p>
+        <p class="cinza-texto">3,2 km de você</p>
+        <p class="valor">R$ 1.800</p>
+        <a href="plantao.html">Ver detalhes</a>
+      </div>
+      <div class="plantao">
+        <p><span class="etiqueta">Noturno</span></p>
+        <h3>Hospital São Lucas</h3>
+        <p class="data">Dom, 04/10 · 19:00 às 07:00 (12h)</p>
+        <p>Anestesiologia · Centro cirúrgico</p>
+        <p class="cinza-texto">5,8 km de você</p>
+        <p class="valor">R$ 2.600</p>
+        <a href="plantao.html">Ver detalhes</a>
+      </div>
+      <div class="plantao">
+        <p><span class="etiqueta">24h</span></p>
+        <h3>Hospital Infantil Sabará</h3>
+        <p class="data">Seg, 05/10 · 07:00 às 07:00 (24h)</p>
+        <p>Pediatria · Emergência pediátrica</p>
+        <p class="cinza-texto">7,1 km de você</p>
+        <p class="valor">R$ 3.900</p>
+        <a href="plantao.html">Ver detalhes</a>
+      </div>
+      <div class="plantao">
+        <p><span class="etiqueta">Noturno</span> <span class="etiqueta urgente">Urgente</span></p>
+        <h3>Pronto-Socorro Central</h3>
+        <p class="data">Ter, 06/10 · 19:00 às 07:00 (12h)</p>
+        <p>Emergência · Sala vermelha</p>
+        <p class="cinza-texto">1,4 km de você</p>
+        <p class="valor">R$ 2.200</p>
+        <a href="plantao.html">Ver detalhes</a>
+      </div>
+      <div class="plantao">
+        <p><span class="etiqueta">Diurno</span></p>
+        <h3>Hospital Regional Oeste</h3>
+        <p class="data">Qui, 08/10 · 07:00 às 19:00 (12h)</p>
+        <p>Ortopedia · PS ortopédico</p>
+        <p class="cinza-texto">18,5 km de você</p>
+        <p class="valor">R$ 2.000</p>
+        <a href="plantao.html">Ver detalhes</a>
+      </div>
+      <div class="plantao">
+        <p><span class="etiqueta">Diurno</span></p>
+        <h3>Maternidade Bela Vista</h3>
+        <p class="data">Sex, 09/10 · 07:00 às 19:00 (12h)</p>
+        <p>Ginecologia · Centro obstétrico</p>
+        <p class="cinza-texto">4,3 km de você</p>
+        <p class="valor">R$ 2.400</p>
+        <a href="plantao.html">Ver detalhes</a>
+      </div>
+      <div class="plantao">
+        <p><span class="etiqueta">Noturno</span></p>
+        <h3>Hospital Santa Clara</h3>
+        <p class="data">Sáb, 10/10 · 19:00 às 07:00 (12h)</p>
+        <p>Cardiologia · Unidade coronariana</p>
+        <p class="cinza-texto">3,2 km de você</p>
+        <p class="valor">R$ 2.800</p>
+        <a href="plantao.html">Ver detalhes</a>
+      </div>
+      <div class="plantao">
+        <p><span class="etiqueta">Diurno</span></p>
+        <h3>Hospital São Lucas</h3>
+        <p class="data">Dom, 11/10 · 07:00 às 19:00 (12h)</p>
+        <p>Clínica Médica · Enfermaria</p>
+        <p class="cinza-texto">5,8 km de você</p>
+        <p class="valor">R$ 1.500</p>
+        <a href="plantao.html">Ver detalhes</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>Escala · protótipo DSW2 · Daniel Gidrão e Lucas Martinez</footer>
+</body>
+</html>

@@ -79,3 +79,76 @@ footer {
   font-size: 14px;
   padding: 24px 16px;
 }
+
+.caixa {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.busca {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.busca input,
+.busca select {
+  flex: 1 1 180px;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  padding: 8px;
+  border: 1px solid #999;
+  width: 100%;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.plantao {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.plantao h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.plantao p {
+  margin: 4px 0;
+}
+
+.data {
+  font-weight: bold;
+}
+
+.valor {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 2px 6px;
+  border: 1px solid #222;
+  font-size: 13px;
+}
+
+.etiqueta.urgente {
+  border-color: #c8102e;
+  color: #c8102e;
+}
+
+.cinza-texto {
+  color: #666;
+}
